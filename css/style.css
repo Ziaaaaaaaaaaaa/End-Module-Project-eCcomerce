@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bi.bi-list{
+    margin-bottom: 2px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+}
+
+.bg-img-1{
+    background-image: url(https://i.postimg.cc/GmVDkYRT/Piano-bg1.jpg);
+}
+.bg-img-2{
+    background-image: url(https://i.postimg.cc/ZRRh499j/Piano-bg2.jpg);
+}
+.bg-img-3{
+    background-image: url(https://i.postimg.cc/RVs31fmQ/photo-1571974599782-87624638275e.jpg);
+}
+.bg-img-4{
+    background-image: url(https://i.postimg.cc/59w9NzjN/jordan-whitfield-Bhf-E1-Igcs-A8-unsplash.jpg);
+}
+.bg-img-5{
+    background-image: url(https://i.postimg.cc/GhwWtgVZ/josh-hild-f-ok0989-Jng-unsplash.jpg);
+}
+.carousel-image {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    font-size: 75px;
+    color: whitesmoke;
+}
+p{
+    font-size: 35px;
+    color: whitesmoke;
+}
+.container{
+    margin-top: 10rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+#about{
+    font-size: 20px;
+}
+
+.my-info{
+    color: white;
+}
+.info{
+    color: white;
+}
