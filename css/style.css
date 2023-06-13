@@ -43,14 +43,26 @@ p{
     font-size: 35px;
     color: whitesmoke;
 }
-.container{
-    margin-top: 10rem;
+.container2{
+    margin-top: 15rem;
+    margin-left: 10rem;
 }
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 16%;
+}
+
+.container{
+    text-align: center;
+    width: 50rem;
+}
+
+.about-title{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
 }
 
 #about{
@@ -62,4 +74,35 @@ footer{
 }
 .info{
     color: white;
+    padding-bottom: 2rem;
+}
+
+.contact-title{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.products-title{
+    font-size: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.card{
+    height: 20rem;
+}
+
+
+.card-text{
+    color: black;
+    font-size: 20px;
+}
+
+.row{
+    gap: 1.5rem;
 }
