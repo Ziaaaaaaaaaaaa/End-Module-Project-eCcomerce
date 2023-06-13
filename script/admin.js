@@ -2,6 +2,7 @@ let removeBtns;
 
 let arr = JSON.parse(localStorage.getItem('arr'));
 let table = document.querySelector('#product-table');
+let sortBtn = document.querySelector('#btn-sort')
 function update() {
   table.innerHTML = '';
   arr.forEach((data) => {
@@ -83,4 +84,15 @@ function deleteItem(event){
   arr.splice(startPoint, 1);
   localStorage.setItem('arr', JSON.stringify(arr))
   update();
+}
+
+sortBtn.addEventListener('click', sortId)
+
+function sortId(){
+  arr.sort((a,b) =>{
+    return  b.id - a.id
+  } )
+  update()
+
+  console.log('test',arr);
 }
