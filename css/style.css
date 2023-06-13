@@ -36,7 +36,7 @@
     background-position: center;
 }
 h1{
-    font-size: 75px;
+    font-size: 3rem !important;
     color: whitesmoke;
 }
 p{
@@ -54,10 +54,10 @@ footer{
     margin-top: 16%;
 }
 
-.container{
+/* .container{
     text-align: center;
     width: 50rem;
-}
+} */
 
 .about-title{
     padding-top: 5rem;
@@ -94,7 +94,7 @@ footer{
 }
 
 .card{
-    height: 20rem;
+    height: 30rem;
 }
 
 
@@ -106,3 +106,8 @@ footer{
 .row{
     gap: 1.5rem;
 }
+
+.title{
+    margin-top: 15rem;
+}
+
