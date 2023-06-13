@@ -1,3 +1,5 @@
+let removeBtns;
+
 let arr = JSON.parse(localStorage.getItem('arr'));
 let table = document.querySelector('#product-table');
 function update() {
@@ -9,29 +11,31 @@ function update() {
         <td>${data.make}</td>
         <td>${data.specs}</td>
         <td>${data.Amount}</td>
-        <td><img src="${data.img}" alt=""></td>
+        <td><img src="${data.img}" style="width: 5rem;" alt=""></td>
         <td>
           <button class="btn btn-primary">Edit</button>
-          <button class="btn btn-primary">Delete</button>
+          <button class="btn btn-primary close-btn">Delete</button>
         </td>
       </tr>
     `;
   });
-  objectArray.forEach((data) => {
-    table.innerHTML += `
-      <tr>
-        <td>${data.id}</td>
-        <td>${data.make}</td>
-        <td>${data.specs}</td>
-        <td>${data.Amount}</td>
-        <td><img src="${data.img}" alt=""></td>
-        <td>
-          <button class="btn btn-primary">Edit</button>
-          <button class="btn btn-primary">Delete</button>
-        </td>
-      </tr>
-    `;
-  });
+  deleteButtons()
+  // objectArray.forEach((data) => {
+  //   table.innerHTML += `
+  //     <tr>
+  //       <td>${data.id}</td>
+  //       <td>${data.make}</td>
+  //       <td>${data.specs}</td>
+  //       <td>${data.Amount}</td>
+  //       <td><img src="${data.img}" alt=""></td>
+  //       <td>
+  //         <button class="btn btn-primary">Edit</button>
+  //         <button class="btn btn-primary close-btn">Delete</button>
+  //       </td>
+  //     </tr>
+  //   `;
+  // });
+
 }
 let btn = document.querySelector('#btn');
 btn.addEventListener('click', addProducts);
@@ -67,3 +71,16 @@ let objectArray = [object1, object2, object3, object4, object5];
 let objectArrayString = JSON.stringify(objectArray);
 localStorage.setItem('myObjectArray', objectArrayString);
 update();
+
+function deleteButtons(){
+  removeBtns = [...document.querySelectorAll('.close-btn')];
+  removeBtns.forEach((item)=>{
+      item.addEventListener('click',deleteItem)
+  })
+}
+function deleteItem(event){
+  let startPoint = removeBtns.indexOf(event.target);
+  arr.splice(startPoint, 1);
+  localStorage.setItem('arr', JSON.stringify(arr))
+  update();
+}
