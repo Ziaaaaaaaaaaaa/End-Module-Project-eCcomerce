@@ -29,6 +29,9 @@ let arr = JSON.parse(localStorage.getItem('arr')) ? JSON.parse(localStorage.getI
     Amount: 2000,
     img: 'https://i.postimg.cc/ZRGCsCFs/casio-ctk-2500-1-KEY0004587-000.jpg',
 }]))
+
+let checkoutArrData = []
+
 let card = document.querySelector('#products-card');
   card.innerHTML = '';
   arr.forEach((data) => {
@@ -37,9 +40,18 @@ let card = document.querySelector('#products-card');
     <img src="${data.img}" class="card-img-top" style="width: 10rem" alt="...">
     <div class="card-body" style="width:10rem">
       <h5 class="card-title">${data.make}</h5>
+      <p class="card-text">${data.specs}</p>
       <p class="card-text">${data.Amount}</p>
-      <a href="../Html/checkout.html" class="btn btn-primary">Add to Checkout</a>
+      <button class="btn btn-danger" onclick='addToCheckout(${JSON.stringify(data)})'>Add to Checkout</button>
       </div>
       </div>
       `;
   });
+
+
+
+function addToCheckout(data){
+    checkoutArrData.push(data)
+    localStorage.setItem('data', JSON.stringify(checkoutArrData))
+    console.log(checkoutArrData);
+}

@@ -112,8 +112,8 @@ function update() {
         <td>${data.Amount}</td>
         <td><img src="${data.img}" style="width: 5rem;" alt=""></td>
         <td>
-          <button class="btn btn-primary">Edit</button>
-          <button class="btn btn-primary close-btn">Delete</button>
+          <button class="btn btn-danger">Edit</button>
+          <button class="btn btn-danger close-btn">Delete</button>
         </td>
       </tr>
     `;
@@ -199,3 +199,4 @@ function sortId() {
   sortAscending = !sortAscending;
   update();
 }
+
