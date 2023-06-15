@@ -20,7 +20,7 @@ function renderCartData(){
         </tr>
         `
     })
-    // deleteButtons()
+
 }
 
 
@@ -37,18 +37,7 @@ console.log("Total:",total);
 
 renderCartData()
 
-// function clearButtons(){
-//   clearBtns = [...document.querySelectorAll('.clear-btn')];
-//   clearBtns.forEach((item)=>{
-//       item.addEventListener('click',clearItem)
-//   })
-// }
-// function clearItem(event){
-//   let startPoint = clearBtns.indexOf(event.target);
-//   arr.splice(startPoint, 1);
-//   localStorage.setItem('arr', JSON.stringify(arr))
-//   update();
-// }
+
 
 clearBtn.addEventListener('click', ()=>{
   localStorage.removeItem('data')
