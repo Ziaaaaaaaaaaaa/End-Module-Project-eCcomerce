@@ -42,24 +42,12 @@ h1{
     font-size: 3rem !important;
     color: whitesmoke;
 }
-/* p{
-    font-size: 35px;
-    color: whitesmoke;
-} */
+
 .container2{
     margin-top: 15rem;
     margin-left: 10rem;
 }
-/* footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16%;
-} */
-/* .container{
-    text-align: center;
-    width: 50rem;
-} */
+
 .about-title{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -88,13 +76,7 @@ h1{
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
-/* .card{
-    height: 30rem;
-}
-.card-text{
-    color: black;
-    font-size: 15px;
-} */
+
 .row{
     gap: 1.5rem;
 }
