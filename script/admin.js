@@ -138,11 +138,13 @@ function update() {
 let btn = document.querySelector('#btn');
 btn.addEventListener('click', addProducts);
 function addProducts() {
+  let id = document.querySelector('#id').value;
   let make = document.querySelector('#make').value;
   let spec = document.querySelector('#spec').value;
   let amount = document.querySelector('#amount').value;
   let image = document.querySelector('#image').value;
   arr.push({
+    id:id,
     make: make,
     specs: spec,
     Amount: amount,
